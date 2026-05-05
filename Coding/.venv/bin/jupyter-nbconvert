@@ -1,0 +1,8 @@
+#!/bin/sh
+'''exec' "/media/harshil/New Volume1/Krish Naik - NLP/Coding/.venv/bin/python" "$0" "$@"
+' '''
+import sys
+from nbconvert.nbconvertapp import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
